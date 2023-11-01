@@ -1,0 +1,44 @@
+{
+  "name": "nielslange/checkout-filters-for-woocommerc-blocks",
+  "description": "Allows managing the checkout filters for WooCommerce Blocks.",
+  "homepage": "https://github.com/nielslange/checkout-filters-for-woocommerc-blocks",
+  "support": {
+    "issues": "https://github.com/nielslange/checkout-filters-for-woocommerc-blocks/issues",
+    "source": "https://github.com/nielslange/checkout-filters-for-woocommerc-blocks"
+  },
+  "type": "wordpress-plugin",
+  "keywords": [
+    "WordPress",
+    "Plugin",
+    "Checkout Filters for WooCommerce Blocks"
+  ],
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Paulo Aromba"
+    }
+  ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "humanmade/psalm-plugin-wordpress": "^2.0",
+    "overtrue/phplint": "2.3.5",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "squizlabs/php_codesniffer": "^3.6",
+    "vimeo/psalm": "4.7",
+    "wp-coding-standards/wpcs": "^2.3",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1"
+  },
+  "scripts": {
+    "phpcbf": "phpcbf --standard=phpcs.xml .",
+    "phpcs": "phpcs --standard=phpcs.xml .",
+    "phplint": "phplint",
+    "psalm": "psalm --no-cache"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
