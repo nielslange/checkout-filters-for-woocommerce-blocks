@@ -71,7 +71,7 @@ class CheckoutFiltersForWooCommerceBlocks {
 	 */
 	public function enqueue_custom_checkout_script() {
 		if ( is_cart() || is_checkout() ) {
-			wp_enqueue_script( 'custom-checkout-script', plugin_dir_url( __FILE__ ) . 'custom-checkout.js', array(), '1.0.0', true );
+			wp_enqueue_script( 'custom-checkout-script', plugin_dir_url( __FILE__ ) . '/build/frontend.js', array(), '1.0.0', true );
 
 			$checkout_labels = array(
 				// 'cart_line_item_class'                     => get_option( 'cart_line_item_class', '' ),

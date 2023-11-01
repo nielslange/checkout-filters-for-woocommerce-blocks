@@ -17,6 +17,7 @@
 		"url": "https://github.com/nielslange/checkout-filters-for-woocommerc-blocks/issues"
 	},
 	"devDependencies": {
+		"@wordpress/dependency-extraction-webpack-plugin": "4.27.0",
 		"@wordpress/prettier-config": "3.1.0",
 		"@wordpress/scripts": "26.15.0",
 		"eslint-plugin-woocommerce": "file:bin/eslint-plugin-woocommerce",
@@ -24,6 +25,7 @@
 		"prettier": "npm:wp-prettier@3.0.3"
 	},
 	"scripts": {
+		"build": "webpack --config webpack.config.js",
 		"phpcbf": "composer phpcbf",
 		"phpcs": "composer phpcs",
 		"phplint": "composer phplint",

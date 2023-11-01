@@ -1,4 +1,4 @@
-const { registerCheckoutFilters } = window.wc.blocksCheckout;
+import { registerCheckoutFilters } from '@woocommerce/blocks-checkout';
 
 const modifyProceedToCheckoutButtonLabel = ( defaultValue ) => {
 	return checkoutLabels.proceed_to_checkout_button_label || defaultValue;
